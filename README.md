@@ -46,6 +46,7 @@ The notebook includes the following steps:
 
    ```bash
    pip install pandas numpy matplotlib seaborn statsmodels scikit-learn
+   # Install any other libraries/packages used
    ```
 2. Open the `main.ipynb` file in Jupyter Notebook or any IDE that supports notebooks.
 3. Run all cells in order for a full demonstration.
@@ -64,18 +65,7 @@ The notebook includes the following steps:
 ## 🚫 Limitations & Future Work
 
 * Currently limited to Shimla data; model may need tuning for other regions
-* Explore LSTM/Prophet for alternative forecasting approaches
 * Include weather, holidays, and event data for more accurate modeling
-
+* High number of outliers due to covid
 ---
 
-## 🌟 Authors
-
-Team D40
-
----
-
-## 📦 Files
-
-* `main.ipynb` – Main notebook
-* `README.md` – Project description and instructions

@@ -1,42 +1,81 @@
-# Create README content for the Tourist Footfall Prediction project
-
-readme_content = """
 # 📈 Tourist Footfall Prediction (Time Series Forecasting)
 
-This project aims to forecast monthly tourist footfall using advanced time series modeling techniques. The model uses real-world visitor data from Shimla, India, to predict trends and help in decision-making for tourism-related planning.
+This notebook implements a time series forecasting pipeline to predict monthly tourist footfall in Shimla, India. It combines statistical modeling with dimensionality reduction to provide insights into seasonal tourism trends.
 
 ---
 
 ## 🧠 Project Overview
 
-This is a complete pipeline built for time series forecasting using SARIMAX and dimensionality reduction using PCA. It includes:
+The notebook includes the following steps:
 
-- Data preprocessing and cleaning
-- Time series decomposition
-- Exploratory data analysis
-- Feature engineering and PCA
-- SARIMAX model fitting and forecasting
-- Model evaluation with performance metrics
+* Loading and cleaning monthly tourist data
+* Exploratory Data Analysis (EDA)
+* Decomposing the time series into trend, seasonality, and residuals
+* Performing PCA for dimensionality reduction on exogenous features
+* Training a SARIMAX model for forecasting
+* Evaluating predictions using RMSE and MAE
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Language**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Statsmodels (SARIMAX), Scikit-learn
+* **Language:** Python
+* **Notebook:** Jupyter (main.ipynb)
+* **Libraries:**
+
+  * `pandas`, `numpy` – Data processing
+  * `matplotlib`, `seaborn` – Visualization
+  * `statsmodels` – SARIMAX modeling
+  * `sklearn` – PCA and evaluation
 
 ---
 
-## 🔍 Key Features
+## 🔍 Highlights
 
-- ✅ Real-world tourist data analysis (Shimla)
-- 📊 Decomposition of trend, seasonality, and residuals
-- 🔄 SARIMAX time series forecasting (with exogenous variables)
-- 📉 Principal Component Analysis for dimensionality reduction
-- 📈 Visualization of trends and predicted footfall
-- 🧮 Evaluation with RMSE and MAE
+* Real tourist data from Shimla, India
+* Monthly analysis with trend and seasonality extraction
+* PCA used to reduce feature dimensionality before forecasting
+* SARIMAX model fitted with exogenous inputs
+* Evaluation metrics for assessing forecast quality
 
 ---
 
-## 📂 Project Structure
+## 📂 How to Run
 
+1. Install required libraries using pip:
+
+   ```bash
+   pip install pandas numpy matplotlib seaborn statsmodels scikit-learn
+   ```
+2. Open the `main.ipynb` file in Jupyter Notebook or any IDE that supports notebooks.
+3. Run all cells in order for a full demonstration.
+
+---
+
+## 📊 Sample Outputs
+
+* Line plots for trends and seasonal components
+* PCA-transformed variable plots
+* Forecast vs Actual footfall comparisons
+* Error metrics: RMSE, MAE
+
+---
+
+## 🚫 Limitations & Future Work
+
+* Currently limited to Shimla data; model may need tuning for other regions
+* Explore LSTM/Prophet for alternative forecasting approaches
+* Include weather, holidays, and event data for more accurate modeling
+
+---
+
+## 🌟 Authors
+
+Team D40
+
+---
+
+## 📦 Files
+
+* `main.ipynb` – Main notebook
+* `README.md` – Project description and instructions
